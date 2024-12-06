@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export const getDashboardData = async (
+export const getDashboardMetrics = async (
   req: Request,
   res: Response
 ): Promise<void> => {
@@ -14,7 +14,7 @@ export const getDashboardData = async (
         stockQuantity: "desc",
       },
     });
-    const saleSummary = await prisma.salesSummary.findMany({
+    const salesSummary = await prisma.salesSummary.findMany({
       take: 5,
       orderBy: {
         date: "desc",
@@ -49,7 +49,7 @@ export const getDashboardData = async (
 
     res.json({
       popularProducts,
-      saleSummary,
+      salesSummary,
       purchaseSummary,
       expenseSummary,
       expenseByCategorySummary,

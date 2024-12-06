@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 async function deleteAllData(orderedFileNames: string[]) {
   const modelNames = orderedFileNames.map((fileName) => {
     const modelName = path.basename(fileName, path.extname(fileName));
-    return modelName.charAt(0).toLowerCase() + modelName.slice(1);
+    return modelName.charAt(0).toUpperCase() + modelName.slice(1);
   });
 
   for (const modelName of modelNames) {
@@ -26,11 +26,11 @@ async function main() {
   const dataDirectory = path.join(__dirname, "seedData");
 
   const orderedFileNames = [
-    "products.json",   // Seed Products first
+    "products.json",
     "expenseSummary.json",
-    "sales.json",       // Seed Sales after Products
+    "sales.json",
     "salesSummary.json",
-    "purchases.json",   
+    "purchases.json",
     "purchaseSummary.json",
     "users.json",
     "expenses.json",

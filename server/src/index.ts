@@ -4,7 +4,6 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import exp from 'constants';
 // ROUTE IMPORTS
 import dashboardRoutes from './routes/dashboardRoutes';
 
@@ -22,7 +21,7 @@ app.use(cors());
 // ROUTES
 app.use('/dashboard', dashboardRoutes);
 // SERVER
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+const port = Number(process.env.PORT) || 3001;
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on port ${port}`);
 });
