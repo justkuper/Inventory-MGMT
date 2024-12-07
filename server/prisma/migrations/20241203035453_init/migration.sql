@@ -22,7 +22,7 @@ ALTER TABLE "Purchases" DROP COLUMN "unitCost",
 ADD COLUMN     "unitCost" DOUBLE PRECISION NOT NULL;
 
 -- AlterTable
-ALTER TABLE "SalesSummary" DROP COLUMN "changePercent",
+ALTER TABLE "SalesSummary" DROP COLUMN "changePercentage",
 ADD COLUMN     "changePercentage" DOUBLE PRECISION;
 
 -- DropTable
