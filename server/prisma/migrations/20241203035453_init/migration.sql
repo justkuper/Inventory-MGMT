@@ -26,7 +26,7 @@ ALTER TABLE "SalesSummary" DROP COLUMN "changePercentage",
 ADD COLUMN     "changePercentage" DOUBLE PRECISION;
 
 -- DropTable
-DROP TABLE "ExpensesSummary";
+DROP TABLE "ExpenseSummary";
 
 -- DropTable
 DROP TABLE "PurchasesSummary";
