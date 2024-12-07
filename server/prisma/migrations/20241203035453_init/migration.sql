@@ -14,7 +14,7 @@
 ALTER TABLE "ExpenseByCategory" DROP CONSTRAINT "ExpenseByCategory_expenseSummaryId_fkey";
 
 -- AlterTable
-ALTER TABLE "Expenses" DROP COLUMN "amout",
+ALTER TABLE "Expenses" DROP COLUMN "amount",
 ADD COLUMN     "amount" DOUBLE PRECISION NOT NULL;
 
 -- AlterTable
