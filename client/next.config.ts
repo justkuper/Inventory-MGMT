@@ -1,14 +1,9 @@
 import type { NextConfig } from "next";
 
+// Correct Next.js config
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-module.exports = {
   images: {
-    domains: ["https://s3-inventorymanagement-kb.s3.us-east-1.amazonaws.com/"],
-    port: "",
-    pathname: "/**",
+    domains: ["s3-inventorymanagement-kb.s3.us-east-1.amazonaws.com"], // Only the domain part
   },
 };
 
