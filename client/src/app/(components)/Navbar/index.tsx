@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "@/app/redux"; // Importing the u
 import { Bell, Menu, Moon, Settings, Sun } from "lucide-react"; // Importing icons from lucide-react package
 import Link from "next/link"; // Importing Link component from Next.js for navigation
 import React from "react"; // Importing React to define the component
+import Image from "next/image";
 
 const Navbar = () => {
   // Defining the Navbar functional component
@@ -86,7 +87,13 @@ const toggleDarkMode = () => {
           <div className="flex items-center gap-3 cursor-pointer">
             {" "}
             {/* Flex container for profile section */}
-            <div className="w-9 h-9">image</div>{" "}
+            <Image
+            src="https://s3-inventorymanagement-kb.s3.us-east-1.amazonaws.com/profile.jpg"
+            alt="Profile"
+            width={50}
+            height={50}
+            className="rounded-full h-full object-cover"
+            />
             {/* Placeholder for profile image (styled width and height) */}
             <span className="font-semibold">Kuper Bank</span>{" "}
             {/* Displaying the username or profile name */}

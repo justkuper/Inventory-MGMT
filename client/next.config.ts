@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
 
 module.exports = {
   images: {
-    domains: ['s3-inventorymanagement.s3.us-east-2.amazonaws.com'],
+    domains: ["https://s3-inventorymanagement-kb.s3.us-east-1.amazonaws.com/"],
+    port: "",
+    pathname: "/**",
   },
-}
-
+};
 
 export default nextConfig;
