@@ -18,7 +18,7 @@ ALTER TABLE "Expenses" DROP COLUMN "amount",
 ADD COLUMN     "amount" DOUBLE PRECISION NOT NULL;
 
 -- AlterTable
-ALTER TABLE "Purchases" DROP COLUMN "uniCost",
+ALTER TABLE "Purchases" DROP COLUMN "unitCost",
 ADD COLUMN     "unitCost" DOUBLE PRECISION NOT NULL;
 
 -- AlterTable
