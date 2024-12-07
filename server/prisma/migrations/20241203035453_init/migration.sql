@@ -29,7 +29,7 @@ ADD COLUMN     "changePercentage" DOUBLE PRECISION;
 DROP TABLE "ExpenseSummary";
 
 -- DropTable
-DROP TABLE "PurchasesSummary";
+DROP TABLE "PurchaseSummary";
 
 -- CreateTable
 CREATE TABLE "PurchaseSummary" (
