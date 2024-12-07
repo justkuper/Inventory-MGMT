@@ -1,7 +1,7 @@
 /*
   Warnings:
 
-  - You are about to drop the column `amout` on the `Expenses` table. All the data in the column will be lost.
+  - You are about to drop the column `amount` on the `Expenses` table. All the data in the column will be lost.
   - You are about to drop the column `uniCost` on the `Purchases` table. All the data in the column will be lost.
   - You are about to drop the column `changePercent` on the `SalesSummary` table. All the data in the column will be lost.
   - You are about to drop the `ExpensesSummary` table. If the table is not empty, all the data it contains will be lost.
